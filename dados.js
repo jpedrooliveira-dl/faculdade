@@ -3,17 +3,19 @@ let dados = [
         nome : "Sistema de Informação",
         descricao : "A Faculdade de Sistemas de Informação é a porta de entrada para um universo de possibilidades na era digital. Ao longo do curso, os estudantes adquirem conhecimentos sólidos em programação, bancos de dados, redes de computadores e gestão de projetos, desenvolvendo habilidades essenciais para criar e gerenciar soluções tecnológicas inovadoras.",
         link : "https://querobolsa.com.br/cursos-e-faculdades/sistemas-de-informacao",
-        tags : ""
+        tags : "sistema Sistemas Sistema sistemas informaçao informação informacao Informaçao Informação"
     },
     {
-        nome: "Ciência da Computação",
-        descricao: "A Ciência da Computação é a base para a inovação tecnológica. O curso explora os fundamentos teóricos da computação, desde algoritmos e estruturas de dados até inteligência artificial e teoria da computação. Os graduados em Ciência da Computação são capazes de desenvolver soluções computacionais complexas, conduzir pesquisas e impulsionar a evolução da tecnologia.",
-        link: "https://querobolsa.com.br/cursos-e-faculdades/ciencia-da-computacao"
+        nome : "Ciência da Computação",
+        descricao : "A Ciência da Computação é a base para a inovação tecnológica. O curso explora os fundamentos teóricos da computação, desde algoritmos e estruturas de dados até inteligência artificial e teoria da computação. Os graduados em Ciência da Computação são capazes de desenvolver soluções computacionais complexas, conduzir pesquisas e impulsionar a evolução da tecnologia.",
+        link : "https://querobolsa.com.br/cursos-e-faculdades/ciencia-da-computacao",
+        tags : "ciencia Ciencia computador computaçao Computaçao computacao Computacao"
       },
       {
         nome: "Engenharia de Software",
         descricao: "A Engenharia de Software transforma ideias em software de alta qualidade. O curso ensina os princípios e práticas para projetar, desenvolver, testar e implantar sistemas de software de forma eficiente e confiável. Engenheiros de software são profissionais indispensáveis para o desenvolvimento de aplicações, sistemas operacionais e outras soluções de software que moldam o mundo digital.",
-        link: "https://querobolsa.com.br/cursos-e-faculdades/engenharia-de-software"
+        link: "https://querobolsa.com.br/cursos-e-faculdades/engenharia-de-software",
+        tags : "engenharia soft Soft"
       },
 ]
 
