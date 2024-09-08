@@ -20,6 +20,8 @@ paragrafo.style.color = '#b7c2d7';
     let nome = "";
     let descricao = "";
     let tags = "";
+
+    let encontrouResultado = false;
     
     for (let dado of dados) {
         titulo = dado.nome.toLowerCase()
@@ -43,10 +45,10 @@ paragrafo.style.color = '#b7c2d7';
         
     }
 
-    if (!resultadoaqui) {
-        resultadoaqui = "<p>Nada encontrado!</p>"
-        return
+    if (!encontrouResultado) {
+        resultadoaqui = `<p style="color: #b7c2d7;">Nada encontrado!</p>`;
     }
+    
     
     selecao.innerHTML = resultadoaqui
 
