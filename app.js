@@ -21,7 +21,7 @@ paragrafo.style.color = '#b7c2d7';
     let descricao = "";
     let tags = "";
 
-    let encontrouResultado = false;
+    // let encontrouResultado = false;
     
     for (let dado of dados) {
         titulo = dado.nome.toLowerCase()
@@ -45,9 +45,9 @@ paragrafo.style.color = '#b7c2d7';
         
     }
 
-    if (!encontrouResultado) {
-        resultadoaqui = `<p style="color: #b7c2d7;">Nada encontrado!</p>`;
-    }
+    // if (!encontrouResultado) {
+    //     resultadoaqui = `<p style="color: #b7c2d7;">Nada encontrado!</p>`;
+    // }
     
     
     selecao.innerHTML = resultadoaqui
