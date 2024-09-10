@@ -64,14 +64,17 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-  width: 60rem; /* Largura máxima da caixa de resultados */
+  width: 80%; /* Largura máxima da caixa de resultados */ /* Ajuste a largura para 80% da tela */
   height: 46vh; /* Altura máxima da caixa de resultados */
   overflow-y: auto; /* Adiciona rolagem vertical se necessário */
   margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
   padding: 1rem; /* Espaçamento interno */
   border-radius: 0.6rem; /* Borda arredondada */
   min-height: 46vh;
-  overflow-y: auto;
+  overflow-y: hidden; /* Oculta o conteúdo que excede a largura */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /*permite que os elementos dentro da caixa de resultados quebrem para a próxima linha se não couberem na largura da caixa. */
 }
 
 /* Estiliza cada item de resultado */
@@ -168,6 +171,14 @@ footer {
   bottom: 0;
   font-size: 1rem; /* Tamanho da fonte */
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
 }
 
 .emailjoao{
