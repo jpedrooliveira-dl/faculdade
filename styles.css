@@ -21,6 +21,7 @@ h1 {
   color: #d7f9ff; /* Cor do texto */
   text-align: center; /* Alinha o texto ao centro */
   letter-spacing: 0.4rem; /* Espaçamento entre letras */
+  margin-bottom: 2rem; /* Adiciona uma margem inferior para espaçamento */
 }
 
 /* Estiliza as seções da página */
