@@ -186,14 +186,6 @@ footer {
   font-size: 1rem;
 }
 
-header{
-  display: flex; /* Habilita o Flexbox para o header */
-  flex-direction: column; /* Alinha os itens na vertical */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  align-items: center; /* Centraliza os itens verticalmente (opcional) */
-  margin-bottom: 3rem; /* Espaçamento abaixo do header */
-}
-
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem; /* Tamanho da fonte em telas menores */
