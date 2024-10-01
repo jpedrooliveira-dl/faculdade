@@ -13,13 +13,15 @@ body {
   height: 100vh; /* Preenche a altura total da viewport */
   margin: 0; /* Remove a margem padrão */
   padding: 0; /* Remove o padding padrão */
+  /* overflow: hidden; */
 }
+
 
 /* Estiliza os títulos h1 */
 h1 {
   font-size: 2.5rem; /* Tamanho da fonte */
   color: #d7f9ff; /* Cor do texto */
-  text-align: center; /* Alinha o texto ao centro */
+  text-align:center; /* Alinha o texto ao centro */
   letter-spacing: 0.4rem; /* Espaçamento entre letras */
   margin-bottom: 2rem; /* Adiciona uma margem inferior para espaçamento */
 }
@@ -65,7 +67,7 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-  width: 100%; /* Largura máxima da caixa de resultados */ /* Ajuste a largura para 80% da tela */
+  width: 30%; /* Largura máxima da caixa de resultados */ /* Ajuste a largura para 80% da tela */
   height: 46vh; /* Altura máxima da caixa de resultados */
   overflow-y: auto; /* Adiciona rolagem vertical se necessário */
   margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
@@ -76,6 +78,8 @@ section button:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; /*permite que os elementos dentro da caixa de resultados quebrem para a próxima linha se não couberem na largura da caixa. */
+  max-height: calc(100vh - 180px); /* Ajuste o valor conforme necessário */
+  overflow-y: auto;
 }
 
 /* Estiliza cada item de resultado */
@@ -115,8 +119,8 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa-sistema {
-  width: 60rem; /* Largura máxima da caixa de resultados */
-  height: 46vh; /* Altura máxima da caixa de resultados */
+  width: 40rem; /* Largura máxima da caixa de resultados */
+  height: 26vh; /* Altura máxima da caixa de resultados */
   overflow-y: auto; /* Adiciona rolagem vertical se necessário */
   margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
   padding: 1rem; /* Espaçamento interno */
@@ -185,6 +189,7 @@ footer {
 .emailjoao{
   color: #b7c2d7;
   font-size: 1rem;
+  padding-left: 0.2rem;
 }
 
 @media (max-width: 768px) {
@@ -225,9 +230,14 @@ footer {
   }
 
   .resultados-pesquisa {
-    width: 90%; /* Largura da caixa de resultados em telas pequenas */
-    height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    height: calc(100vh - 150px);
   }
+
+  .resultados-pesquisa-sistema { /* Tamanho do resultado no tamnho da tela  de celular */
+    width: 60%;
+    width: 20rem;
+  }
+
 
   .item-resultado h2 {
     font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
