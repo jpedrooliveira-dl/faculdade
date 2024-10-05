@@ -28,24 +28,28 @@ let dados = [
       {
         nome: "A Era da Inteligência Artificial",
         descricao: "O livro: A Era da Inteligência Artificial e uma análise aprofundada do impacto da inteligência artificial na sociedade, explorando seus benefícios, desafios e implicações éticas.",
+        link: "https://www.amazon.com.br/Era-Intelig%C3%AAncia-Artificial-futuro-humano/dp/9722073400",
         tags: "Livro livro inteligência artificial IA futuro tecnologia sociedade ética política economia robótica futurologia história da humanidade evolução humana revolução cognitiva 978-85-42-12919-1 Henry Kissinger Não-ficção Intrinseca 2021"
     },
 
     {
         nome: "Sapiens: Uma Breve História da Humanidade",
         descricao: "O livro: Sapiens: Uma Breve História da Humanidade e uma jornada pela história da humanidade, desde os primeiros hominídeos até a era moderna, explorando os fatores que moldaram nossa espécie.",
+        link:"https://www.amazon.com.br/Sapiens-Uma-Breve-Hist%C3%B3ria-Humanidade/dp/8525432180",
         tags: "Livro livro história da humanidade evolução humana revolução científica sociedade cultura espécie humana sapiens homosapiens tecnologia 978-85-75-42577-5 Yuval Noah Harari História L&PM Pocket 2014"
     },
 
     {
         nome: "Steve Jobs",
         descricao: "O livro: Steve Jobs e uma biografia autorizada de Steve Jobs, fundador da Apple, que explora sua vida, carreira e legado.",
+        link: "https://www.amazon.com/Steve-Jobs-Biografia-Portugues-Brasil/dp/8535919716",
         tags: "Livro livro steve jobs apple inovação liderança biografia tecnologia design empreendedorismo história da tecnologia marketing 978-85-35-21643-2 Walter Isaacson Biografia BestSeller 2011"
     },
 
     {
         nome: "O Algoritmo",
         descricao: "O livro: O Algoritmo e uma exploração dos algoritmos que moldam nosso mundo digital, desde as redes sociais até os motores de busca.",
+        link: "",
         tags: "Livro livro algoritmo tecnologia sociedade privacidade dados internet inteligência artificial futuro controle 978-85-75-42474-7 Clifford Stoll Não-ficção L&PM Pocket 2018"
     }
 
