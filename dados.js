@@ -49,7 +49,7 @@ let dados = [
     {
         nome: "O Algoritmo",
         descricao: "O livro: O Algoritmo e uma exploração dos algoritmos que moldam nosso mundo digital, desde as redes sociais até os motores de busca.",
-        link: "",
+        link: "./pagindisponivel.html",
         tags: "Livro livro algoritmo tecnologia sociedade privacidade dados internet inteligência artificial futuro controle 978-85-75-42474-7 Clifford Stoll Não-ficção L&PM Pocket 2018"
     }
 
