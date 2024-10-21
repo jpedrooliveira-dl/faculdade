@@ -254,15 +254,21 @@ footer {
 .whatsapp-button {
   position: fixed;
   bottom: 8.25rem;
-  right: .25rem;
-  width: 100px;
-  height: 100px;
+  right: 1.25rem;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0px 2px 4px #b7c2d7;
+  display: flex; /* Transforma o botão em um container flexbox */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
 }
 
 .whatsapp-button img {
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: 90%;
   /* color: white; */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura do container */
+  object-fit: contain; /* Mantém as proporções da imagem, preenchendo o container ao máximo */
 }
