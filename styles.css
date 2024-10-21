@@ -258,7 +258,7 @@ footer {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  box-shadow: 0px 2px 4px #b7c2d7;
+  box-shadow: 0px 2px 4px;
   display: flex; /* Transforma o botão em um container flexbox */
   justify-content: center; /* Centraliza os itens horizontalmente */
   align-items: center; /* Centraliza os itens verticalmente */
