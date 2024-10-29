@@ -120,7 +120,7 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa-sistema {
   width: 40rem; /* Largura máxima da caixa de resultados */
-  height: 26vh; /* Altura máxima da caixa de resultados */
+  height: 40vh; /* Altura máxima da caixa de resultados */
   overflow-y: auto; /* Adiciona rolagem vertical se necessário */
   margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
   padding: 1rem; /* Espaçamento interno */
@@ -253,7 +253,7 @@ footer {
 
 .whatsapp-button {
   position: fixed;
-  bottom: 8.25rem;
+  bottom: 10.45rem;
   right: 1.25rem;
   width: 80px;
   height: 80px;
@@ -271,4 +271,44 @@ footer {
   max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
   max-height: 100%; /* Garante que a imagem não ultrapasse a altura do container */
   object-fit: contain; /* Mantém as proporções da imagem, preenchendo o container ao máximo */
+}
+
+
+/* Estiliza o redes sociais */
+.redes_social {
+  color: #b7c2d7;
+  padding-bottom: 7.4rem;
+  padding-left: 1rem;
+  background-color: #020d17;
+  width: 100%; /* Largura total da página */
+  position: fixed; /* Posiciona o rodapé */
+  bottom: 0; /* Alinha ao fundo da página */
+  bottom: 0;
+  font-size: 1rem; /* Tamanho da fonte */
+  left: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+}
+
+.redes_social p {
+  display: inline;
+
+}
+
+.redes_social a {
+  text-decoration: none;
+  margin-right: 0.3rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.3rem;
+}
+
+.redes_social img {
+  width: 1.7rem;
 }
