@@ -2,18 +2,19 @@ body, html {
     height: 100%;
     margin: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 18rem;
+    padding-left: 0;
     background-color: rgb(1, 15, 20);
 }
 
 .login {
     border: 0.06rem solid #d7f9ff;
-    width: 25rem;
-    height: 31.25rem;
+    width: 18rem;
+    height: 26.95rem;
     background-image: url(./img/fundo-1.png);
     color: white;
-    border-radius: 1.25rem;
+    border-radius:1.25rem;
     box-shadow:0rem 0rem 1.25rem rgba(215, 249, 255 0.85);
     background-position: center;
     overflow: hidden;
