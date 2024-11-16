@@ -26,6 +26,16 @@ h1 {
   margin-bottom: 2rem; /* Adiciona uma margem inferior para espaçamento */
 }
 
+/* Estiliza os títulos h1 */
+.sobrep {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: #d7f9ff;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
 /* Estiliza as seções da página */
 section {
   display: flex; /* Usa Flexbox para layout */
@@ -333,3 +343,4 @@ footer {
 .login a img {
   margin-right: 0.3rem;
 }
+
