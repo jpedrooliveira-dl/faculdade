@@ -13,7 +13,7 @@ body {
   height: 100vh; /* Preenche a altura total da viewport */
   margin: 0; /* Remove a margem padrão */
   padding: 0; /* Remove o padding padrão */
-  /* overflow: hidden; */
+  /* overflow: auto; */
 }
 
 
@@ -79,17 +79,17 @@ section button:hover {
 .resultados-pesquisa {
   width: 30%; /* Largura máxima da caixa de resultados */ /* Ajuste a largura para 80% da tela */
   height: 46vh; /* Altura máxima da caixa de resultados */
-  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+  /* overflow-y: auto; Adiciona rolagem vertical se necessário */
   margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
   padding: 1rem; /* Espaçamento interno */
   border-radius: 0.6rem; /* Borda arredondada */
   min-height: 46vh;
-  overflow-y: hidden; /* Oculta o conteúdo que excede a largura */
+  /* overflow-y: auto; Oculta o conteúdo que excede a largura */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; /*permite que os elementos dentro da caixa de resultados quebrem para a próxima linha se não couberem na largura da caixa. */
   max-height: calc(100vh - 180px); /* Ajuste o valor conforme necessário */
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 /* Estiliza cada item de resultado */
@@ -130,7 +130,7 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa-sistema {
   width: 40rem; /* Largura máxima da caixa de resultados */
-  height: 30vh; /* Altura máxima da caixa de resultados */
+  height: 25vh; /* Altura máxima da caixa de resultados */
   overflow-y: auto; /* Adiciona rolagem vertical se necessário */
   margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
   padding: 1rem; /* Espaçamento interno */
@@ -344,3 +344,30 @@ footer {
   margin-right: 0.3rem;
 }
 
+.quem-somos {
+  text-align: center;
+  margin-top: 2rem; /* Ajuste a margem superior conforme necessário */
+  margin-bottom: 5rem; /* Ajuste a margem inferior conforme necessário */
+  color: #b7c2d7;
+}
+
+
+/* Estiliza o Contato */
+
+.contato {
+  position: absolute;
+  top: 0;
+  right: 10.5rem;
+  padding: 1rem 1rem 1rem 1rem; 
+}
+
+.contato a {
+  text-decoration: none;
+  color: #b7c2d7;
+  padding-right: 0.5rem;
+  /* background-color: #b7c2d7; */
+}
+
+.contato a img {
+  margin-right: 0.3rem;
+}
