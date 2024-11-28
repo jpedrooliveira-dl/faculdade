@@ -72,9 +72,6 @@ border-radius: 10px;
     flex-direction: column;
   }
 
-
-  /* Botao volta a pagina principal */
-
   .voltaHome {
     text-align: end;
   }
@@ -84,3 +81,7 @@ border-radius: 10px;
     color: #d7f9ff;
   }
   
+
+
+  /* Botao volta a pagina principal */
+
