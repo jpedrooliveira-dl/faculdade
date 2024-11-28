@@ -1,87 +1,373 @@
-
+/* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* Estiliza o corpo da página */
 body {
-    font-family: 'Chakra Petch', sans-serif;;
-    background-color: rgb(1, 15, 20);
+  font-family: 'Chakra Petch', sans-serif; /* Define a fonte padrão */
+  background-color: rgb(1, 15, 20); /* Cor de fundo da página */
+  /* rgb(1, 15, 20); */
+  display: flex; /* Usa Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /*Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  height: 100vh; /* Preenche a altura total da viewport */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  /* overflow: auto; */
 }
 
+
+/* Estiliza os títulos h1 */
 h1 {
-    text-align: center;
-    color: #d7f9ff;
-    text-align: center;
+  font-size: 2.5rem; /* Tamanho da fonte */
+  color: #d7f9ff; /* Cor do texto */
+  text-align:center; /* Alinha o texto ao centro */
+  letter-spacing: 0.4rem; /* Espaçamento entre letras */
+  margin-bottom: 2rem; /* Adiciona uma margem inferior para espaçamento */
 }
 
-form {
-    margin: 2.25rem auto;
-    text-align: center;
-    width: 25.75rem;
-    border: 1px solid  #d7f9ff;
-    background: url(./image.png);
-    background-position: center;
-    background-size: cover;
-    padding: 1.25rem;
-    display: flexbox;
-    flex-direction: column;
-    align-items: center;
-    padding: 8rem 2rem 7rem 2rem;
-    border-radius: 5%;
+/* Estiliza os títulos h1 */
+.sobrep {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: #d7f9ff;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
-    width: 80%;
-    border: 1rem rgb(1, 15, 20);
-    background-color: #d7f9ff;
-    padding: 10px;
-    margin-bottom: 10px; /* Espaço entre os campos */
-    border: 1px solid #d7f9ff;
-    border-radius: 10px;
-    box-sizing: border-box; /* Inclui padding e borda na largura */
-    border: 0.08rem solid rgb(1, 15, 20);
+/* Estiliza as seções da página */
+section {
+  display: flex; /* Usa Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
 
-button{
-    width: 80%;
-background-color: #d7f9ff;
-color: rgb(1, 15, 20);
-padding: 12px 20px;
-border: none 0.08rem solid rgb(1, 15, 20);
-border-radius: 10px;
-
+/* Estiliza os inputs dentro das seções */
+section input {
+  width: 30rem; /* Largura dos inputs */
+  border: none; /* Remove a borda padrão */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 1.5rem; /* Borda arredondada */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+  color: #45474b; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
+/* Estiliza os botões dentro das seções */
+section button {
+  padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 1.5rem; /* Borda arredondada */
+  background-color: #30475e; /* Cor de fundo do botão */
+  color: #f5f7f8; /* Cor do texto do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
 
-.rodaPe {
-    background-color: #01060b; /* Cor de fundo do rodapé */
-    color: #b7c2d7; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
-    width: 100%; /* Largura total da página */
-    position: fixed; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
-    bottom: 0;
-    font-size: 1rem; /* Tamanho da fonte */
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    flex-direction: column;
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+  background-color: #d7f9ff; /* Muda a cor de fundo ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+  color:#040c14;
+  text-decoration: none;
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+  width: 30%; /* Largura máxima da caixa de resultados */ /* Ajuste a largura para 80% da tela */
+  height: 46vh; /* Altura máxima da caixa de resultados */
+  /* overflow-y: auto; Adiciona rolagem vertical se necessário */
+  margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 0.6rem; /* Borda arredondada */
+  min-height: 46vh;
+  /* overflow-y: auto; Oculta o conteúdo que excede a largura */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /*permite que os elementos dentro da caixa de resultados quebrem para a próxima linha se não couberem na largura da caixa. */
+  max-height: calc(100vh - 180px); /* Ajuste o valor conforme necessário */
+  /* overflow-y: auto; */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  background: #ffffff; /* Cor de fundo dos itens */
+  border-radius: 0.6rem; /* Borda arredondada */
+  padding: 1rem; /* Espaçamento interno */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+  font-size: 1.5rem; /* Tamanho da fonte */
+  color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  color: #30475e; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+  color: #45474b; /* Cor do texto */
+  margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa-sistema {
+  width: 40rem; /* Largura máxima da caixa de resultados */
+  height: 25vh; /* Altura máxima da caixa de resultados */
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+  margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza do paragrafo da pagina */
+.paragrafosistema {
+  color: #91b0b8;
+  margin: 0.5rem 0;
+}
+
+/* Estiliza do h1 da pagina */
+.h2sistema{
+  color: #d7f9ff;
+  text-align: center;
+}
+
+/* Estiliza do link da pagina */
+.asistema{
+  color: #040c14;
+  background-color: #d7f9ff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.asistema:hover {
+  color:#f5f7f8;
+  background-color: rgb(1, 15, 20);  
+  text-decoration: none;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  background: #30475e; /* Cor de fundo dos itens */
+  border-radius: 0.6rem; /* Borda arredondada */
+  padding: 1rem; /* Espaçamento interno */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+  background-color: #01060b; /* Cor de fundo do rodapé */
+  color: #b7c2d7; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 0; /* Espaçamento interno */
+  width: 100%; /* Largura total da página */
+  position: fixed; /* Posiciona o rodapé */
+  bottom: 0; /* Alinha ao fundo da página */
+  bottom: 0;
+  font-size: 1rem; /* Tamanho da fonte */
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+}
+
+.emailjoao{
+  color: #b7c2d7;
+  font-size: 1rem;
+  padding-left: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Tamanho da fonte em telas menores */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
   }
 
-  .voltaHome {
-    text-align: end;
+  section input {
+    width: 25rem; /* Largura dos inputs em telas menores */
+    padding: 0.8rem; /* Espaçamento interno em telas menores */
   }
 
-  .voltaHome a {
-    text-decoration: none;
-    color: #d7f9ff;
+  .resultados-pesquisa {
+    width: 40rem; /* Largura da caixa de resultados em telas menores */
+    height: 40vh; /* Altura da caixa de resultados em telas menores */
   }
-  
+
+  .item-resultado h2 {
+    font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+    letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+  }
+
+  section input {
+    width: 17rem; /* Largura total dos inputs em telas pequenas */
+  }
+
+  section button {
+    padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+    font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+  }
+
+  .resultados-pesquisa {
+    height: calc(100vh - 150px);
+  }
+
+  .resultados-pesquisa-sistema { /* Tamanho do resultado no tamnho da tela  de celular */
+    width: 60%;
+    width: 20rem;
+  }
 
 
-  /* Botao volta a pagina principal */
+  .item-resultado h2 {
+    font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+  }
 
+  footer {
+    font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+  }
+}
+
+
+/* Estiliza o botão do Whataap */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 10.45rem;
+  right: 1.25rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px;
+  display: flex; /* Transforma o botão em um container flexbox */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.whatsapp-button img {
+  width: 90%;
+  height: 90%;
+  /* color: white; */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura do container */
+  object-fit: contain; /* Mantém as proporções da imagem, preenchendo o container ao máximo */
+}
+
+
+/* Estiliza o redes sociais */
+.redes_social {
+  color: #b7c2d7;
+  padding-bottom: 7.4rem;
+  padding-left: 1rem;
+  background-color: #020d17;
+  width: 100%; /* Largura total da página */
+  position: fixed; /* Posiciona o rodapé */
+  bottom: 0; /* Alinha ao fundo da página */
+  bottom: 0;
+  font-size: 1rem; /* Tamanho da fonte */
+  left: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+}
+
+.redes_social p {
+  display: inline;
+
+}
+
+.redes_social a {
+  text-decoration: none;
+  margin-right: 0.3rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.3rem;
+}
+
+.redes_social img {
+  width: 1.7rem;
+}
+
+
+/* ESTILIZAÇÃO DO LOGIN */
+
+.login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem 1rem 1rem 1rem; 
+}
+
+.login a {
+  text-decoration: none;
+  color: #b7c2d7;
+  padding-right: 0.5rem;
+  /* background-color: #b7c2d7; */
+}
+
+.login a img {
+  margin-right: 0.3rem;
+}
+
+.quem-somos {
+  text-align: center;
+  margin-top: 2rem; /* Ajuste a margem superior conforme necessário */
+  margin-bottom: 5rem; /* Ajuste a margem inferior conforme necessário */
+  color: #b7c2d7;
+}
+
+
+/* Estiliza o Contato */
+
+.contato {
+  position: absolute;
+  top: 0;
+  right: 10.5rem;
+  padding: 1rem 1rem 1rem 1rem; 
+}
+
+.contato a {
+  text-decoration: none;
+  color: #b7c2d7;
+  padding-right: 0.5rem;
+  /* background-color: #b7c2d7; */
+}
+
+.contato a img {
+  margin-right: 0.3rem;
+}
