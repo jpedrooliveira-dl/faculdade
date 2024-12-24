@@ -19,7 +19,7 @@ let dados = [
         link: "https://querobolsa.com.br/cursos-e-faculdades/engenharia-de-software",
         tags : "Faculdade Curso faculdade curso engenharia soft Soft"
       },
-
+      // LIVRO
       {
         nome: "Introção a Sistema de Informação",
         descricao:"O livro: Introção a Sistema de Informação e uma introdução aos conceitos fundamentais de sistemas de informação, explorando hardware, software, redes e banco de dados.",
@@ -54,7 +54,7 @@ let dados = [
         link: "./pagindisponivel.html",
         tags: "Livro livro algoritmo tecnologia sociedade privacidade dados internet inteligência artificial futuro controle 978-85-75-42474-7 Clifford Stoll Não-ficção L&PM Pocket 2018",
     },
-    
+    // FILME
     {
       nome: "O Jogo da Imitação",
       descricao: "Baseado na história real de Alan Turing, um gênio da matemática que liderou uma equipe para decifrar a máquina Enigma, utilizada pelos nazistas para codificar mensagens. O filme retrata os desafios e dilemas de Turing durante a Segunda Guerra Mundial, além de explorar temas como homossexualidade e preconceito.",
@@ -89,40 +89,40 @@ let dados = [
       link: "./pagindisponivel.html",
       tags: "Realidade Virtual Inteligência Artificial Filosofia Ação Ciência Ficção Neo",
     },
+    // LINGUAGENS DE PROGRAMAÇÃO
+    {
+      nome: "Python",
+      descricao: "Python é uma linguagem de programação de alto nível, conhecida por sua sintaxe clara e legível. É amplamente utilizada em diversas áreas, como desenvolvimento web, ciência de dados, machine learning e automação. Sua comunidade ativa e vasta biblioteca de módulos contribuem para sua versatilidade.",
+      link: "https://www.python.org/",
+      tags: "Python programação linguagem python linguagem de programação desenvolvimento web ciência de dados machine learning"
+  },
+
+  {
+      nome: "JavaScript",
+      descricao: "JavaScript é a linguagem padrão para desenvolvimento web front-end. É utilizada para criar interfaces dinâmicas e interativas em páginas da web. Com o Node.js, JavaScript também pode ser utilizado para desenvolver aplicações back-end. (Inclusive este site foi desenvolvido em conjunto com HTML e CSS.)",
+      link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+      tags: "JavaScript programação linguagem javascript desenvolvimento web front-end back-end Node.js"
+  },
+  
+  {
+      nome: "Java",
+      descricao: "Java é uma linguagem de programação orientada a objetos, robusta e portável. É amplamente utilizada no desenvolvimento de aplicações empresariais, aplicativos Android e sistemas distribuídos. A máquina virtual Java (JVM) permite que programas Java sejam executados em diferentes plataformas.",
+      link: "https://www.oracle.com/java/",
+      tags: "Java programação linguagem java desenvolvimento de software orientação a objetos JVM Android"
+  },
+
+  {
+      nome: "C#",
+      descricao: "C# é uma linguagem de programação orientada a objetos desenvolvida pela Microsoft. É utilizada principalmente para o desenvolvimento de aplicações .NET, jogos e aplicativos móveis. C# é conhecida por sua integração com o framework .NET e sua performance.",
+      link: "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+      tags: "C# programação linguagem c# desenvolvimento .NET orientação a objetos jogos aplicativos móveis"
+  },
+  
+  {
+      nome: "C++",
+      descricao: "C++ é uma linguagem de programação de alto nível, com características de baixo nível. É utilizada para desenvolver softwares de alto desempenho, jogos, sistemas operacionais e aplicativos que exigem controle preciso sobre a memória. C++ é uma extensão da linguagem C.",
+      link: "https://www.cplusplus.com/",
+      tags: "C++ programação linguagem c++ desenvolvimento de software alto desempenho jogos sistemas operacionais"
+  }
 ]
 
-
-// let filmeti = [
-//   {
-//     nome: "O Social",
-//     sinopse: "A história de Mark Zuckerberg, um jovem estudante de Harvard que funda o Facebook, revolucionando a maneira como as pessoas se conectam.",
-//     lancamento: 2010,
-//     classificacaoIndicativa: "12 anos",
-//     tags : "filme Filme filmes Filmes social Social Mark mark zuckerberg Zuckerberg"
-//   },
-//   {
-//     nome: "O Jogo da Imitação",
-//     sinopse: "A história real de Alan Turing, o matemático britânico que liderou um grupo de especialistas em Bletchley Park na tentativa de decifrar a máquina Enigma, utilizada pelos nazistas durante a Segunda Guerra Mundial.",
-//     lancamento: 2014,
-//     classificacaoIndicativa: "12 anos"
-//   },
-//   {
-//     nome: "Piratas da Sillicon Valley",
-//     sinopse: "O filme narra a história da rivalidade entre Steve Jobs e Bill Gates, os fundadores da Apple e da Microsoft, respectivamente, e como suas empresas moldaram a indústria da tecnologia.",
-//     lancamento: 1999,
-//     classificacaoIndicativa: "12 anos"
-//   },
-//   {
-//     nome: "Ex Machina",
-//     sinopse: "Um programador ganha a oportunidade de passar uma semana com um androide de inteligência artificial, desenvolvido por seu chefe, e se vê envolvido em uma complexa relação com a máquina.",
-//     lancamento: 2015,
-//     classificacaoIndicativa: "14 anos"
-//   },
-//   {
-//     nome: "Her",
-//     sinopse: "Em um futuro próximo, um homem solitário se apaixona por um sistema operacional com inteligência artificial, desenvolvido para atender às suas necessidades emocionais.",
-//     lancamento: 2013,
-//     classificacaoIndicativa: "12 anos"
-//   }
-        
-//       ];
