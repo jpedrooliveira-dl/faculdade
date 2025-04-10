@@ -1,37 +1,39 @@
-    function pesquisar () {
-        console.log();
+function pesquisar() {
+    console.log();
 
-        let selecao = document.getElementById("resultados-pesquisa-sistema");
+    let selecao = document.getElementById("resultados-pesquisa-sistema");
 
-        let resultadoAqui = document.getElementById("resultado_aqui").value
+    let resultadoAqui = document.getElementById("resultado_aqui").value
 
-        //Se resultadoAqui  for uma sting sem nada
-        if (resultadoAqui == "") {
+    //Se resultadoAqui  for uma sting sem nada
+    if (resultadoAqui == "") {
 
-            selecao.innerHTML = "<p>Nada foi encontrado  :(</p>";
-            const paragrafo = document.querySelector('p');
-    paragrafo.style.color = '#b7c2d7';  
-            return
-        } 
+        selecao.innerHTML = "<p>Nada foi encontrado  :(</p>";
+        const paragrafo = document.querySelector('p');
+        paragrafo.style.color = '#b7c2d7';
+        return
+    }
 
-        resultadoAqui = resultadoAqui.toLowerCase()
+    resultadoAqui = resultadoAqui.toLowerCase()
 
-        let resultadoaqui = " "
-        let nome = "";
-        let descricao = "";
-        let tags = "";
+    let resultadoaqui = ""
+    let nome = "";
+    let descricao = "";
+    let tags = "";
+    let encontrouResultado = false;
 
-        // let encontrouResultado = false;
-        
-        for (let dado of dados) {
-            titulo = dado.nome.toLowerCase()
-            descricao = dado.descricao.toLowerCase()
-            tags = dado.tags.toLowerCase()
-            //se titulo includes resultadoAqui
-            if (nome.includes(resultadoAqui) || descricao.includes(resultadoAqui) || tags.includes(resultadoAqui)){
+    // let encontrouResultado = false;
 
-                // cria um novo elemento
-                resultadoaqui += `
+    for (let dado of dados) {
+        nome = dado.nome.toLowerCase()
+        descricao = dado.descricao.toLowerCase()
+        tags = dado.tags.toLowerCase()
+        //se titulo includes resultadoAqui
+        if (nome.includes(resultadoAqui) || descricao.includes(resultadoAqui) || tags.includes(resultadoAqui)) {
+            encontrouResultado = true;
+
+            // cria um novo elemento
+            resultadoaqui += `
         
                 <h2 class="h2sistema"> ${dado.nome}</h2>
                 
@@ -41,17 +43,21 @@
                         </div>
                 
                 `
-            }  
-            
         }
 
-        
-
-        // if (!encontrouResultado) {
-        //     resultadoaqui = `<p style="color: #b7c2d7;">Nada encontrado!</p>`;
-        // }
-        
-        
-        selecao.innerHTML = resultadoaqui
-
     }
+
+    // Verifica se nenhum resultado foi encontrado e mostra uma mensagem amigável para o usuário
+
+    if (!encontrouResultado) {
+        resultadoaqui = `<p>Nenhum resultado encontrado para "${resultadoAqui}". Tente outra palavra!</p>`;
+        selecao.innerHTML = resultadoaqui;
+        const paragrafo = document.querySelector("p");
+        paragrafo.style.color = '#b7c2d7';
+        return;
+    }
+
+
+    selecao.innerHTML = resultadoaqui
+
+}
